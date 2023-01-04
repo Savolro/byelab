@@ -1,0 +1,12 @@
+name: Bye and Hello
+run-name: ${{ github.actor }} is running a workflow
+on: [push]
+jobs:
+  say-goodbyes:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Bye Gitlab!"
+  say-greetings:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Github!"
